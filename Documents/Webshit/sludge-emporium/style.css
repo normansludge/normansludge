@@ -1,0 +1,298 @@
+ :root {
+                --header-image: url('./Assets/titlecard.png');
+                --body-bg-image: url('./Assets/sludgewall_px.png');
+                --cardboard: url('./Assets/cardboard_px.png');
+
+                
+            }
+
+            @font-face{
+                font-family: 'g1';
+                src: url('./Assets/fonts/Aerosoldier_PERSONAL_USE_ONLY.otf');
+            }
+            @font-face {
+                font-family: 'g2';
+                src: url('./Assets/fonts/GraffitiYouth-Regular.otf');
+            }
+            @font-face {
+                font-family: 'g3';
+                src: url('./Assets/fonts/aAnotherTag.otf');
+            }
+            @font-face {
+                font-family: 'g4';
+                src: url(./Assets/fonts/SparticalGraffiti_PERSONAL_USE_ONLY.otf);
+            }
+            @font-face {
+                font-family: 'sharpie';
+                src: url(./Assets/fonts/Sacha_Sharpy.otf);
+            }
+            #wholedamnthing {
+                width:1515px; 
+                margin: auto;
+            }
+            
+            body {
+                font-family: 'sharpie';
+                font-size:large;
+                margin: 0;
+                color: #0f2400;
+                background-color: #0f2400;
+                background-image:
+                radial-gradient(circle, #04161628 60%, #0f2400 100%),
+                var(--body-bg-image);
+                mix-blend-mode: multiply, normal;
+                background-size:cover;
+                background-position: top;
+
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+            #headerArea {
+                margin: auto;
+
+            }
+
+            #header {
+                margin: auto;
+                width: 80%;
+        
+                
+                background-size: 100%;
+                position: relative;
+                background-repeat: no-repeat;
+                background-position: center;
+                            
+
+            }
+            .title {
+                position: relative;
+                background-size: contain;
+                width: 100%;
+                height: 100px;
+            }
+            .sludge{
+                position: relative;
+                height: 170px;
+                top: 35px;
+                left: 10%;
+            }
+            .emporium {
+                position: relative;
+                top: 25px;
+                left: 150px;
+                width: 600px;
+            }
+            .pipe {
+                position: absolute;
+                top: -15px;
+                width: 100%;
+            }
+            .slime {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                height:1250px;
+                width: 200px;
+
+            }
+            #slimecontainer {
+                position: absolute;
+                top:210px;
+                right: -120px;
+                height:1150px;
+                width: 200px;
+                overflow: hidden;
+            }
+
+
+            /* navigation section!! */
+            #navbar {
+                margin:auto;
+                margin-top: 0px;
+                margin-bottom: 40px;
+                position: relative;
+                top: 120px;
+                align-content: center;
+                background-size: cover;
+                
+                /* navbar color */
+                width: 70%;
+                
+            }
+
+            #navbar ul {
+                display:flex;   
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                justify-content: space-evenly;
+            }
+
+            #navbar li {
+                padding-top: 10px;
+            }
+
+            /* navigation links*/
+            #navbar li a {
+                color: #55bc28;
+                /* navbar text color */
+                font-size: 60px;
+                text-decoration: none;
+                text-shadow: -2px -2px 0 #0b2307, 2px -2px 0 #0b2307, -2px 2px 0 #0b2307, 4px 4px 0 #0b2307;
+
+                /* this removes the underline */
+            }
+
+            /* navigation link when a link is hovered over */
+            #navbar li a:hover {
+                color: #a49cba;
+                text-decoration: underline;
+            }
+            #container {
+                max-width: 1100px;
+                
+                margin: 0px auto;
+                margin-left: 250px
+            }
+
+           
+            #container a {
+                color: #2c8a00;
+                text-shadow: 2px 2px 0 #0b2307;
+                font-weight: bold;
+                text-decoration: none;
+                
+            }
+            #container a:hover {
+                color: #a49cba;
+            }
+            
+            #flex {
+                display: flex;
+            }
+
+           
+           aside {
+                width: 300px;
+                height: 50%;
+                font-size: smaller;
+                padding: 0px;
+                /* this makes the sidebar text slightly smaller */
+            }
+            audio {
+                filter: hue-rotate(25deg) sepia(100%) invert(20%) sepia(100%) saturate(100%) contrast(100%);         
+            }
+            .box {
+                background-image: url("Assets/paper_px.png");
+                background-size:contain;
+                border: 3px groove #0b2307;
+                border-radius: 15px;
+                padding: 10px;
+            }
+            .dump {
+                width: 120%;
+                position: relative;
+                margin-left: -10%;
+                top: 150px;
+                margin-bottom: 130px;
+            }
+            .fursona {
+                background-size:cover;
+                position: relative;
+                margin-left: 20px;
+                align-items: center;
+                margin-top: -50px;
+            }
+            .name {
+                position: absolute;
+                color: #55bc28;
+                text-shadow: -1px -1px 0 #0b2307, 1px -1px 0 #0b2307, -1px 1px 0 #0b2307, 2px 2px 0 #0b2307;
+                top: 50%;
+                left:15px;
+
+                font-size: 60px;
+                font-family: 'g3';
+            }
+            .pfp {  
+                position:absolute;
+                left: -50px;
+                top: -50px;
+                width: 350px;
+                align-content: left;
+            }
+            #ratcontainer {
+                position: absolute;
+                top:0px;
+                width: 250px;   
+                height: 250px;
+                overflow: hidden;
+            }
+
+
+            /* this is the color of the main content area,
+    between the sidebars! */
+            main {
+                flex: 1;
+                padding: 20px;
+                order: 2;
+                margin-left: 80px;
+                position: relative;
+                height:fit-content;
+                
+                                
+            }
+             */ #leftSidebar {
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            h1 {
+                font-size: 75px;
+            }
+            h2 {
+                font-size: 50px;
+            }
+            h3 {
+                font-size: 25px;
+            }
+
+            strong {
+                /* this styles bold text */
+                color: #0b2307;
+            }
+            @media only screen and (max-width: 800px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+                aside {
+                    width: 100%;
+                }
+
+                /* the order of the items is adjusted here for responsiveness!
+      since the sidebars would be too small on a mobile device.
+      feel free to play around with the order!
+      */
+                main {
+                    order: 1;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+
+                #rightSidebar {
+                    order: 3;
+                }
+
+                #navbar ul {
+                    flex-wrap: wrap;
+                }
+            }
+
+
