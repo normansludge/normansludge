@@ -5,7 +5,10 @@
 
                 
             }
-
+           @font-face {
+                   font-family: 'garamond';
+                   src: url("./Assets/fonts/garamond");
+           }
             @font-face{
                 font-family: 'g1';
                 src: url('./Assets/fonts/Aerosoldier_PERSONAL_USE_ONLY.otf');
@@ -294,5 +297,6 @@
                     flex-wrap: wrap;
                 }
             }
+
 
 
