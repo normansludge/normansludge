@@ -1,12 +1,12 @@
-    h2{
+    h2{ 
+        margin:0px;
         font-size:28px;
     }
     sup a {
         font-size:12px;
     }
     a {
-        color:#55bc28;
-        text-shadow: 0px 1px 0px #0b2307,1px 0px 0 #0b2307;
+        color:#2c8a00;
 
     }
     .embimg{
